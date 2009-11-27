@@ -12,7 +12,7 @@ client.connect()
 
 var index = function(request, response) {
 	client.lrange('transactions', 0, 9).addCallback(function(transactions) {
-		var rows = transactions.map(function(transaction) {
+		var rows = (transactions || []).map(function(transaction) {
 			return transaction.split(",")
 		}).reduce(function(element, value) {
 			return value + "<tr><td>" + element[0] + "</td><td>" + element[1] + "</td></tr>"
