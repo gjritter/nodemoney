@@ -1,6 +1,6 @@
 # nodemoney
 
-A simple example application that uses node.js and the [redis node client][redis-node-client] to track financial transactions.
+A simple example application that uses [node.js] and the [redis node client][redis-node-client] to track financial transactions.
 
 ## Setup
 
